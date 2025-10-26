@@ -1,254 +1,510 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Emma's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emma Margaret Akinyi - Data Analyst and Visualization Specialist from Nairobi, Kenya. Experienced in Python, Power BI, SQL, and data storytelling.">
+    <title>Emma Margaret Akinyi | Data Analyst & Visualization Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --white: #ffffff;
+        }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Emma Margaret Akinyi .O<br />
-						</h1>						
-						<p>The Analytics Enthusiast and Visualization Expert.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
 
-				<!-- Header -->
-					<!-- <header id="header">
-						<a href="index.html" class="logo">Analytics</a>
-					</header> -->
+        /* Navigation */
+        nav {
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">This is Emma</a></li>
-							<!-- <li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li> -->
-						</ul>
-						<ul class="icons">
-							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-							<li><a href="https://www.linkedin.com/in/emma-margaret-analyst/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-							<li><a href="https://github.com/Emma7-hub" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        nav ul li {
+            margin: 0 1.5rem;
+        }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">2023</span>
-									<h2><a href="#">Data<br />
-									Analytics</a></h2>
-									<p>Hi, I am Emma from Nairobi, Kenya. I am a Data Analyst and visualization specialist. Let's work together.
-									</p>
-								</header>
-								<a href="#" class="image main"><img src="images/me.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="Emma.cv.pdf" class="button large">My Resume</a></li>
-								</ul>
-							</article>
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2><a href="#">World map showing<br />
-										purchased vehicles per year</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/emma.akinyi/viz/Krill-Section7map/Map" class="image fit"><img src="images/world_map_viz.jpg" alt="" /></a>
-									<p>This world map shows the total vehicles sold per year, from 2005 through to 2014.
-										The darker the shade, the higher the number. There wasn't a steady increase observed over the years in the total number of cars sold.
-									</p>
-									<!-- <ul class="actions special"> -->
-										<!-- <li><a href="#" class="button">Full Story</a></li> -->
-									<!-- </ul> -->
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 22, 2017</span> -->
-										<h2><a href="#">Brazil Schema<br />
-										2016 to 2018</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/emma.akinyi/viz/BrazilSchema/Sheet1" class="image fit"><img src="images/brazil.jpg" alt="" /></a>
-									<p>Here, I joined different datasets to create a map visual of the sum of payment value by seller ID and seller
-										state in Brazil. I observed a concentration of sales in the southern-eastern side of the country.
-										#kaggle dataset
-									</p>
-									<ul class="actions special">
-										<li><a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" class="button">The Dataset</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 18, 2017</span> -->
-										<h2><a href="#">Cleaned Data<br />
-										showing car sales by continent</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/emma.akinyi/viz/Krill-Section7/Sheet2" class="image fit"><img src="images/data.jpg" alt="" /></a>
-									<p>Personal vehicle sales, globally, between 2005 and 2014. The only steady increase is observed in Asia/Middle East.
-										compared to the rest of the regions, which illustrate fluctuations throughout the years.
-									</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 14, 2017</span> -->
-										<h2><a href="#">A bank's<br />
-										Storyline</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/emma.akinyi/viz/Section6-Krill/BankStoryline#1" class="image fit"><img src="images/europe.jpg" alt="" /></a>
-									<p>A Bank's customer segment Story line in Europe. It shows the differences between gender, age,
-										bank balances and job classification across different states.
-									</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 11, 2017</span> -->
-										<h2><a href="#">My<br />
-										Skills</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/AnalyticsUnsplash.jpg" alt="" /></a>
-									<p>Over the years, I have gained many skills which include, but not limited to:
-										Python, Power BI, Excel, Communication,
-										Data Visualization,
-										Leadership,
-										Office Management,
-										Typing (6 years),
-										Kafka,
-										Tableau,
-										Micro services,
-										Metabase,
-										MySQL,
-										PostgreSQL,
-										Payroll Management,
-										Work Ethics,
-										Data cleaning.
-										</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 7, 2017</span> -->
-										<h2><a href="#">My<br />
-										Interests</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/growthUnsplash.jpg" alt="" /></a>
-									<p>They include: Data analytics, Statistics,
-										Data entry,
-										Payroll and Tax Management, 
-										Office Management, Data Management, Analytical Thinking.</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-							</section>
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
 
-						<!-- Footer -->
-							<!-- <footer>
-								<div class="pagination"> -->
-									<!--<a href="#" class="previous">Prev</a>-->
-									<!-- <a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a> -->
-								<!-- </div>
-							</footer> -->
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-					</div>
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Message Me" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Mombasa<br />
-								Kenya</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+254 (0)723720027</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">emaggie1011@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
-									<li><a href="https://www.linkedin.com/in/emma-margaret-analyst/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
-									<li><a href="https://github.com/Emma7-hub" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; 2024</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
 
-			</div>
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .btn {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
 
-	</body>
+        .btn-primary {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background-color: var(--bg-light);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-content h3 {
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-content p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background-color: var(--bg-light);
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category ul li {
+            padding: 0.5rem 0;
+            color: var(--text-light);
+            border-bottom: 1px solid var(--bg-light);
+        }
+
+        .skill-category ul li:last-child {
+            border-bottom: none;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-content p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .contact-link:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .about-image {
+                margin: 0 auto;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Emma Margaret Akinyi</h1>
+        <p>Data Analyst & Visualization Specialist | Nairobi, Kenya</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-secondary">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/me.jpg" alt="Emma Margaret Akinyi" class="about-image">
+                <div class="about-text">
+                    <p>Hi! I'm Emma, a passionate Data Analyst and Visualization Specialist based in Nairobi, Kenya. I transform complex datasets into actionable insights through compelling visual narratives.</p>
+                    <p>With expertise in Python, Power BI, SQL, and advanced analytics tools, I help organizations make data-driven decisions. My work spans across various industries, from e-commerce analytics to financial services, where I've successfully delivered projects that drive business growth.</p>
+                    <p>I specialize in creating interactive dashboards, performing statistical analysis, and building data pipelines that automate reporting processes. I'm committed to turning data into strategic assets for businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="images/world_map_viz.jpg" alt="Global Vehicle Sales Analysis" class="project-image">
+                    <div class="project-content">
+                        <h3>Global Vehicle Sales Analysis (2005-2014)</h3>
+                        <p>Interactive world map visualization showing total vehicles sold annually across different regions. Identified key market trends and regional performance variations.</p>
+                        <div class="project-tags">
+                            <span class="tag">Tableau</span>
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Geospatial Analysis</span>
+                        </div>
+                        <p><strong>Insight:</strong> No steady global increase observed, with fluctuating regional patterns requiring targeted market strategies.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="images/brazil.jpg" alt="Brazil E-commerce Sales Dashboard" class="project-image">
+                    <div class="project-content">
+                        <h3>Brazil E-commerce Sales Dashboard</h3>
+                        <p>Combined multiple datasets to create a comprehensive visualization of payment values by seller location across Brazil. Data sourced from Kaggle.</p>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Data Integration</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                        <p><strong>Insight:</strong> Sales concentration in southeastern Brazil, suggesting opportunities for market expansion in other regions.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="images/data.jpg" alt="Regional Sales Trends Analysis" class="project-image">
+                    <div class="project-content">
+                        <h3>Regional Vehicle Sales Trends (2005-2014)</h3>
+                        <p>Comparative analysis of personal vehicle sales across global regions, revealing distinct growth patterns and market behaviors.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Statistical Analysis</span>
+                            <span class="tag">Data Cleaning</span>
+                        </div>
+                        <p><strong>Insight:</strong> Asia/Middle East showed consistent growth while other regions experienced market volatility.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="images/europe.jpg" alt="Bank Customer Segmentation" class="project-image">
+                    <div class="project-content">
+                        <h3>European Bank Customer Segmentation</h3>
+                        <p>Developed a comprehensive storyline analyzing customer demographics, bank balances, and job classifications across European states.</p>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Customer Analytics</span>
+                            <span class="tag">Segmentation</span>
+                        </div>
+                        <p><strong>Insight:</strong> Identified key demographic patterns enabling targeted financial product offerings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>📊 Data Analysis & Visualization</h3>
+                    <ul>
+                        <li>Python (Pandas, NumPy, Matplotlib)</li>
+                        <li>Power BI</li>
+                        <li>Tableau</li>
+                        <li>Excel (Advanced)</li>
+                        <li>Metabase</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🗄️ Database & Data Engineering</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>Apache Kafka</li>
+                        <li>Microservices</li>
+                        <li>Data Cleaning & Transformation</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>📈 Business & Analytics</h3>
+                    <ul>
+                        <li>Statistical Analysis</li>
+                        <li>Data Management</li>
+                        <li>Analytical Thinking</li>
+                        <li>Payroll & Tax Management</li>
+                        <li>Office Management</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>💼 Professional Skills</h3>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Leadership</li>
+                        <li>Work Ethics</li>
+                        <li>Data Entry</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <div class="contact-content">
+                <p>I'm always open to discussing new projects, opportunities, or partnerships. Feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        📧 Email Me
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
+                        💼 LinkedIn
+                    </a>
+                    <a href="https://github.com/emma7-hub" target="_blank" class="contact-link">
+                        💻 GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Emma Margaret Akinyi. All rights reserved.</p>
+    </footer>
+</body>
 </html>
